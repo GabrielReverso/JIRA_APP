@@ -1,10 +1,19 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { Button, StyleSheet, Text, View, TouchableOpacity } from 'react-native';
+import CustomButton from './src/components/CustomButton';
+
 
 export default function App() {
+
+  const logMessage = () => {
+    console.log("Oi");
+  };
+
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
+      <CustomButton onPress={logMessage} text={"Teste Componente"}/>
+      <CustomButton onPress={logMessage} text={"Teste Componente 2"}/>
+      <CustomButton onPress={logMessage} text={"Teste Componente 3"}/>
       <StatusBar style="auto" />
     </View>
   );
@@ -13,7 +22,7 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: 'blue',
+    backgroundColor: "#001139", //01184D
     alignItems: 'center',
     justifyContent: 'center',
   },
