@@ -21,7 +21,8 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.gabrielreversopereira.JIRA"
     },
     "web": {
       "favicon": "./assets/favicon.png"
@@ -30,6 +31,7 @@
       "eas": {
         "projectId": "35403315-df6d-4619-9476-985dfc746263"
       }
-    }
+    },
+    "owner": "gabrielreversopereira"
   }
 }
